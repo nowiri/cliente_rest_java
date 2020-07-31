@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName='Main'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //unirest dependency
+    compile "com.konghq:unirest-java:3.8.06:standalone"
+
+}
